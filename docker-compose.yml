@@ -1,24 +1,10 @@
-services:
-  # Development service
-  dev:
-    build:
-      context: .
-      target: development
-    ports:
-      - "5173:5173"
-    volumes:
-      - .:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
-    command: npm run dev
+version: '3.8'
 
-  # Production service
-  prod:
-    build:
-      context: .
-      target: production
+services:
+  calculator-app:
+    build: .
     ports:
-      - "5645:80"
+      - "6545:6545"
     environment:
       - NODE_ENV=production
+    restart: unless-stopped

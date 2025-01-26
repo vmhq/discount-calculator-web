@@ -1,18 +1,26 @@
-# Development stage
-FROM node:20-alpine AS development
+# Use Node.js LTS (Alpine for smaller image size)
+FROM node:20-alpine
 
+# Set working directory
 WORKDIR /app
+
+# Copy package files
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
+
+# Copy project files
 COPY . .
 
-# Build stage
-FROM development AS build
+# Build the application
 RUN npm run build
 
-# Production stage
-FROM nginx:alpine AS production
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 5645
-CMD ["nginx", "-g", "daemon off;"]
+# Install serve to run the production build
+RUN npm install -g serve
+
+# Expose port 6545
+EXPOSE 6545
+
+# Start the application
+CMD ["serve", "-s", "dist", "-l", "6545"]
