@@ -44,7 +44,7 @@ A modern, user-friendly web application for calculating discounts and tips with 
 
 1. Clone the repository
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/vmhq/discount-calculator-web.git
 cd discount-calculator-web
 ```
 
