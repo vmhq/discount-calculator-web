@@ -47,24 +47,17 @@ A modern, user-friendly web application for calculating discounts and tips with 
 git clone https://github.com/vmhq/discount-calculator-web.git
 cd discount-calculator-web
 ```
-
-2. Development mode
+3. Build
 ```bash
-docker compose up dev
+docker compose up -d --build
 ```
-This will start the development server at http://localhost:5173
-
-3. Production mode
-```bash
-docker compose up prod
-```
-This will start the production server at http://localhost:5645
+This will start the server at http://localhost:6545
 
 #### Local Development
 
 1. Clone the repository
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/vmhq/discount-calculator-web.git
 cd discount-calculator-web
 ```
 
