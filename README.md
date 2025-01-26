@@ -1,5 +1,7 @@
 # Discount & Tip Calculator 🧮
 
+A modern, user-friendly web application for calculating discounts and tips with a beautiful dark/light mode interface.
+
 ## Repository Structure 📂
 
 ```
@@ -18,8 +20,6 @@
 ├── tailwind.config.js    # Tailwind CSS configuration
 └── vite.config.ts        # Vite build configuration
 ```
-
-A modern, user-friendly web application for calculating discounts and tips with a beautiful dark/light mode interface.
 
 ## Features ✨
 
