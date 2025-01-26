@@ -27,15 +27,40 @@ A modern, user-friendly web application for calculating discounts and tips with 
 - Tailwind CSS
 - Vite
 - Lucide Icons
+- Docker
+- Docker Compose
 
 ## Getting Started 🚀
 
 ### Prerequisites
 
-- Node.js (Latest LTS version recommended)
-- npm or yarn
+- Node.js (Latest LTS version recommended) - *Only needed for local development*
+- npm or yarn - *Only needed for local development*
+- Docker and Docker Compose - *For containerized deployment*
 
 ### Installation
+
+#### Using Docker (Recommended)
+
+1. Clone the repository
+```bash
+git clone [your-repo-url]
+cd discount-calculator-web
+```
+
+2. Development mode
+```bash
+docker compose up dev
+```
+This will start the development server at http://localhost:5173
+
+3. Production mode
+```bash
+docker compose up prod
+```
+This will start the production server at http://localhost:5645
+
+#### Local Development
 
 1. Clone the repository
 ```bash
