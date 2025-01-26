@@ -1,5 +1,24 @@
 # Discount & Tip Calculator 🧮
 
+## Repository Structure 📂
+
+```
+├── src/                    # Source code
+│   ├── App.tsx            # Main application component
+│   ├── main.tsx           # Application entry point
+│   ├── index.css          # Global styles
+│   └── vite-env.d.ts      # TypeScript environment declarations
+├── public/                # Static assets
+│   └── calculator.svg     # Calculator icon
+├── dist/                  # Production build output
+├── docker-compose.yml     # Docker Compose configuration
+├── Dockerfile             # Docker container configuration
+├── package.json           # Project dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── vite.config.ts        # Vite build configuration
+```
+
 A modern, user-friendly web application for calculating discounts and tips with a beautiful dark/light mode interface.
 
 ## Features ✨
