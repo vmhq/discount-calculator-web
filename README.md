@@ -47,7 +47,7 @@ A modern, user-friendly web application for calculating discounts and tips with 
 git clone https://github.com/vmhq/discount-calculator-web.git
 cd discount-calculator-web
 ```
-3. Build
+2. Build
 ```bash
 docker compose up -d --build
 ```
