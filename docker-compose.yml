@@ -1,8 +1,0 @@
-version: '3.8'
-
-services:
-  discount-calculator:
-    build: .
-    ports:
-      - "5946:80"
-    restart: unless-stopped
