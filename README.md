@@ -90,10 +90,6 @@ npm run build
    - Enter number of people to split the bill
    - View tip amount, total, and per-person cost
 
-## Contributing 🤝
-
-Contributions are welcome! Feel free to open issues and pull requests.
-
 ## License 📄
 
 This project is open source and available under the MIT License.
